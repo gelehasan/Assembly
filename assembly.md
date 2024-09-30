@@ -17,7 +17,7 @@ The space between esp and ebp make up whatever the function is being called and 
 
 Stack in practice when called
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/9d211471-2b1d-4707-9027-75d9ae2583a0/4ceca409-d893-4e5c-ac88-4ea9dd83b3e3/image.png)
+![image](https://github.com/user-attachments/assets/3415f91b-6383-4348-9888-cc04e9470705)
 
 
 
@@ -74,3 +74,20 @@ So now our varibale B has a memory address of ebp- 0x8
 
 - Registers small areas in the processors, they are used to store memory addresses, values or anything that can be represented with 8 bytes or less. in x84 version there is 6 general purpose registers such as: eax, ebx, ECX, edx, ESI and EDI. reserved rgs: EBP, ESP and EIP
 - Instructions
+
+Assembly format
+
+Every assembly instruction has 2 parts, **operation and argument**
+
+operation can take 1 or 2 argument
+
+move instruction takes 2 argument and copies the value referred to by the second argument  into the location referred by the first argument
+
+Take the example you want to move a local varible to eax register
+
+So if the command is eax,ebp-0x8  **it will not move 0x8, because ebp0-08x is adress of the stack where our variable  is located, so this instruction instead will copy our address of our variable into  the register**
+
+In order to copy the actual value and whats **ebp-0x8**  is pointed to we need to use square
+
+move eax,[ebp-0x8] // derefence  now we referecning the value
+
