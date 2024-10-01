@@ -102,3 +102,14 @@ eax updated:
 eax=15
 
 
+Sub instruction works the same
+
+Push/ pop
+
+push places its operand onto the top of stack, it first decrements the stack pointer then place its operand into the location that it points to
+
+push arg
+
+pop reg
+
+pop instruction takes a register as an argument, it will move the top element of the stack into the register specified by the its argument, then increments the stack pointer thus popping the top element off the stack
