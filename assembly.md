@@ -113,3 +113,16 @@ push arg
 pop reg
 
 pop instruction takes a register as an argument, it will move the top element of the stack into the register specified by the its argument, then increments the stack pointer thus popping the top element off the stack
+![image](https://github.com/user-attachments/assets/585673d9-8515-441f-a4a8-680f2672f446)
+
+Lea instruction ( load, effective address
+
+it places the address specified by the second operand into the register specified by its first operand
+
+Which is used to obtaining a pointer into a memory region
+
+Every instruction has an instruction address these are the memory where each instruction is stored
+
+Eip register always contains the instruction thats currently being executed
+
+So the computer will execute whatever the eip is pointing to
