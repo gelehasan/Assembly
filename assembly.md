@@ -91,3 +91,14 @@ In order to copy the actual value and whats **ebp-0x8**  is pointed to we need t
 
 move eax,[ebp-0x8] // derefence  now we referecning the value
 
+
+add takes 2 arguments, it stores the result into the first argument
+
+eax=10
+
+add eax,0x5
+
+eax updated:
+eax=15
+
+
