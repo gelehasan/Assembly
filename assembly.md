@@ -126,3 +126,19 @@ Every instruction has an instruction address these are the memory where each ins
 Eip register always contains the instruction thats currently being executed
 
 So the computer will execute whatever the eip is pointing to
+
+![image](https://github.com/user-attachments/assets/6442baac-46fd-4dd9-895e-28379b6135de)
+
+So the computer will execute whatever the eip is pointing to
+
+The compare instruction is equivalent to the sub instruction, except for storing results into the first argument it will contain flags in the processor that has 0, <0, >0
+
+Compared instruction are always followed by a jump instruction
+
+Every jmp instruction contains an instruction argument, it will check the state of the flag and set the instruction pointer into its argument.
+
+There are many types of jump instruction
+
+Jump equal to, jump not equal to, jump greater than
+
+je, jne, jg
