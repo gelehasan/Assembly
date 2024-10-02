@@ -142,3 +142,8 @@ There are many types of jump instruction
 Jump equal to, jump not equal to, jump greater than
 
 je, jne, jg
+![image](https://github.com/user-attachments/assets/5e5261de-6ab9-4dc7-bc72-77ccde5acc47)
+![image](https://github.com/user-attachments/assets/c1868300-53b7-49ae-8fa8-979a89599601)
+if instruction earlier, compare 1,3 is followed by jump if less then. the jump would be taken
+![image](https://github.com/user-attachments/assets/3cac0197-68ab-4520-8fd8-b06e1f4199d4)
+But instead if we had jump if greater than, then the jump would not have taken and would just continue with the next instruciton
