@@ -147,3 +147,13 @@ je, jne, jg
 if instruction earlier, compare 1,3 is followed by jump if less then. the jump would be taken
 ![image](https://github.com/user-attachments/assets/3cac0197-68ab-4520-8fd8-b06e1f4199d4)
 But instead if we had jump if greater than, then the jump would not have taken and would just continue with the next instruciton
+
+Call calls a function, it can be self made function or system functions such as printf etc.
+
+Call takes one argument its equivalent to push eip, jump function. which means it will push the return address of the function being called into the stack then move eip to the first instruction of the function
+
+The leave function is called at the end of every function, it destroys the current stack frame by setting the stack pointer to base pointer and popping the base pointer to off the top of the stack
+
+The return instruction always follows a leave instruction
+
+The return instruction will pop the return address off the top of the stack then set the instruction pointer to that address
