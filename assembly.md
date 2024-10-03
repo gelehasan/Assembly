@@ -253,3 +253,15 @@ jmp instruction will jump to an instruction address which is used to redirect co
 jmp 0x602010
 
 // instruction will make code execution will jump to 0x602010
+
+call & ret
+
+Similar to jmp, but will push values of rbp and rip onto the stack, then jump to whatever memory location is pointed to, mainly used for calling function afer the function is finished, a ret instruction is called which uses the pushed values of rbp and rip (saved base and instruction pointers= it can continue execution where it left off
+
+cmp
+
+similar to sub instruction, but doesnt store the results in first argument, it checks if the result is less than 0, greater than zero, or equal to zero then set a value to the flag depending on that
+
+jnz / jz
+
+instruction are similar to jump instruction, but they will only execute the jump depending the value set to the flag, for jz it will jump if flag is zero, jnz will jump if flag is not zero
