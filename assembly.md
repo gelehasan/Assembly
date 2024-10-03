@@ -172,3 +172,36 @@ Double word is 4 bytes of data
 qWord is eight bytes of data
 
 Stack follows last in first out data structure basically pop and push. here is where local variables and the code is stored
+
+Flags(is a bits of register) used to set or not. can mean something and based on their value execute different acitons
+00:     Carry Flag
+01:     always 1
+02:     Parity Flag
+03:     always 0
+04:     Adjust Flag
+05:     always 0
+06:     Zero Flag
+07:     Sign Flag
+08:     Trap Flag
+09:     Interruption Flag     
+10:     Direction Flag
+11:     Overflow Flag
+12:     I/O Privilege Field lower bit
+13:     I/O Privilege Field higher bit
+14:     Nested Task Flag
+15:     Resume Flag
+
+Instructions
+
+**Move instruction:** moves one data from one register to another
+
+// this will move rdx register to the rax register
+move rax,rdx
+
+// pointer is a value that points to a particular memory address
+// extracting whatever the value rdx is pointing to and storing it in rax register
+move, rax, [rdx]
+
+// will move rdx register, to the memory pointed by the rax register, actual value of the rax
+// register does not change
+move [rax], rdx
