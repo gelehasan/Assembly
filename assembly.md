@@ -157,3 +157,18 @@ The leave function is called at the end of every function, it destroys the curre
 The return instruction always follows a leave instruction
 
 The return instruction will pop the return address off the top of the stack then set the instruction pointer to that address
+
+## Summerzing
+
+Think of assembly registers like a bucket used to store information
+
+- **x86** = 32-bit —> can access up to 4GB of RAM
+- **x64** = 64-bit —> handles much larger data
+
+Words is just 2 bytes of data
+
+Double word is 4 bytes of data
+
+qWord is eight bytes of data
+
+Stack follows last in first out data structure basically pop and push. here is where local variables and the code is stored
