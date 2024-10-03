@@ -205,3 +205,51 @@ move, rax, [rdx]
 // will move rdx register, to the memory pointed by the rax register, actual value of the rax
 // register does not change
 move [rax], rdx
+
+Lea instruction is responsible for calculating the address of the second operand and movesthe address in the first, for example:
+// this will move the address rbx+0x10 to the rdi register
+lea rdi,[rbx+0x10]
+
+Add
+
+this just adds the values together and stores the sum in the first argument
+
+```nasm
+add rax, rdx
+// is same as rax=rax+rdx
+```
+
+Sub
+
+```nasm
+sub rax, 0x10
+
+// first operand will substract value from second one 
+//and store the difference in the first argument 
+rsp - 0x10
+```
+
+Push 
+
+pushes instruction to the stack that will make the stack either grow by 8 bytes for x64, 4 bytes for x86. then pushes the contents of a register onto the new sack space
+
+```nasm
+// will grow the stack by 8 bytes
+push rax
+```
+
+Pop
+
+Will pop the top 8 bytes or 4 bytes from the top of the stack and into the argument then it will shrink the stack
+
+```nasm
+pop rax
+// top 8 bytes of the stackk will end up in the rax register
+```
+
+jmp
+
+jmp instruction will jump to an instruction address which is used to redirect code execution
+jmp 0x602010
+
+// instruction will make code execution will jump to 0x602010
