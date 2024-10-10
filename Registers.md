@@ -19,3 +19,10 @@ All registers are known for general purposes register because it can be used for
 
 ![image](https://github.com/user-attachments/assets/c975d916-1028-42e2-8de8-1d4b7940327e)
 
+
+![image](https://github.com/user-attachments/assets/a75af371-f304-4a36-9df7-7850356603af)
+
+Understand how move instruction works with real example
+
+you can use jump to not lose anything without when rebooting it
+![image](https://github.com/user-attachments/assets/7df0dcf3-e041-41a2-91a9-74f2f35b3c5d)
